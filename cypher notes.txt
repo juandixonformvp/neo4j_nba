@@ -1,0 +1,53 @@
+Match (n)-[r]-() delete n,r
+
+MATCH (:Team { name: 'Wizards' })-->(Team) return Team.name
+MATCH (n:Team { name: 'Wizards' })<-[:TRADED]-(Team) return Team.name
+
+Hops 1-2
+MATCH (n:Team { name: 'Wizards' })<-[:TRADED*1..2]-(Team) return Team.name
+
+Shortest Path
+MATCH (n:Team { name: 'Wizards' }),(m:Team { name: 'Lakers' }), p = shortestPath((n)-[*..15]-(m))
+RETURN p
+
+finds all teams with second round picks in a trade
+MATCH (n:Team)-[r]-() where r.draft = 2 return n 
+
+queries by relationship type
+MATCH (n:Team)-[r]-() where type(r) = "TRADED" return n
+
+Finds all relationships where teams gave a 2nd round pick
+MATCH ()-[r]->()
+WHERE type(r)= "TRADED" and r.draft = 2
+RETURN r
+
+returns trades where Hornets gave up a 2nd round pick
+MATCH (n:Team { name: 'Hornets' })-[r]->()
+WHERE type(r)= "TRADED" and r.draft = 2
+RETURN r
+
+lists teams that received first round picks
+MATCH (n:Team)<-[r]-()
+WHERE type(r)= "TRADED" and r.draft = 1
+RETURN n.name
+
+lists teams that gave up first round picks
+MATCH ()<-[r]-(n:Team)
+WHERE type(r)= "TRADED" and r.draft = 1
+RETURN n.name
+
+lists teams that traded from the West to East
+MATCH (m:Team)<-[r]-(n:Team)
+WHERE type(r)= "TRADED" and m.conference = "East" and n.conference = "West"
+RETURN n.name
+
+lists teams that traded within the division
+MATCH (m:Team)<-[r]-(n:Team)
+WHERE type(r)= "TRADED" and m.division =  n.division
+
+lists teams that traded within the division during the trade deadline
+MATCH (m:Team)<-[r]-(n:Team)
+WHERE type(r)= "TRADED" and m.division =  n.division and r.month = "February"
+RETURN n.name
+
+RETURN n.name

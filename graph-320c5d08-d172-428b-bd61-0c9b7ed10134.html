@@ -1,0 +1,51 @@
+
+    <html>
+    <head>
+      <script type="text/javascript" src="vis-4.18.1/dist/vis.js"></script>
+      <link href="vis-4.18.1/dist/vis.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+    <div id="320c5d08-d172-428b-bd61-0c9b7ed10134"></div>
+
+    <script type="text/javascript">
+      var nodes = [{"label": "Hornets", "title": "{'name': 'Hornets', 'division': 'Southeast', 'conference': 'East'}", "group": "Team", "id": 281}, {"label": "Nets", "title": "{'name': 'Nets', 'division': 'Atlantic', 'conference': 'East'}", "group": "Team", "id": 294}, {"label": "Thunder", "title": "{'name': 'Thunder', 'division': 'Northwest', 'conference': 'West'}", "group": "Team", "id": 286}, {"label": "Grizzlies", "title": "{'name': 'Grizzlies', 'division': 'Southwest', 'conference': 'West'}", "group": "Team", "id": 283}, {"label": "Blazers", "title": "{'name': 'Blazers', 'division': 'Northwest', 'conference': 'West'}", "group": "Team", "id": 285}, {"label": "Clippers", "title": "{'name': 'Clippers', 'division': 'Pacific', 'conference': 'West'}", "group": "Team", "id": 282}, {"label": "Suns", "title": "{'name': 'Suns', 'division': 'Pacific', 'conference': 'West'}", "group": "Team", "id": 296}, {"label": "Wizards", "title": "{'name': 'Wizards', 'division': 'Southeast', 'conference': 'East'}", "group": "Team", "id": 288}, {"label": "Pistons", "title": "{'name': 'Pistons', 'division': 'Central', 'conference': 'East'}", "group": "Team", "id": 279}, {"label": "Lakers", "title": "{'name': 'Lakers', 'division': 'Pacific', 'conference': 'West'}", "group": "Team", "id": 302}, {"label": "Pacers", "title": "{'name': 'Pacers', 'division': 'Central', 'conference': 'East'}", "group": "Team", "id": 301}, {"label": "Bucks", "title": "{'name': 'Bucks', 'division': 'Central', 'conference': 'East'}", "group": "Team", "id": 280}, {"label": "Hawks", "title": "{'name': 'Hawks', 'division': 'Southeast', 'conference': 'East'}", "group": "Team", "id": 287}, {"label": "Rockets", "title": "{'name': 'Rockets', 'division': 'Southwest', 'conference': 'West'}", "group": "Team", "id": 305}, {"label": "Nuggets", "title": "{'name': 'Nuggets', 'division': 'Northwest', 'conference': 'West'}", "group": "Team", "id": 304}, {"label": "Heat", "title": "{'name': 'Heat', 'division': 'Southeast', 'conference': 'East'}", "group": "Team", "id": 306}, {"label": "Pelicans", "title": "{'name': 'Pelicans', 'division': 'Southwest', 'conference': 'West'}", "group": "Team", "id": 291}, {"label": "Magic", "title": "{'name': 'Magic', 'division': 'Southeast', 'conference': 'East'}", "group": "Team", "id": 284}, {"label": "Celtics", "title": "{'name': 'Celtics', 'division': 'Atlantic', 'conference': 'East'}", "group": "Team", "id": 303}, {"label": "Cavaliers", "title": "{'name': 'Cavaliers', 'division': 'Central', 'conference': 'East'}", "group": "Team", "id": 292}, {"label": "Knicks", "title": "{'name': 'Knicks', 'division': 'Atlantic', 'conference': 'East'}", "group": "Team", "id": 289}, {"label": "", "title": "{'name': 'Hugo Weaving'}", "group": "Actor", "id": 6}, {"label": "76ers", "title": "{'name': '76ers', 'division': 'Atlantic', 'conference': 'East'}", "group": "Team", "id": 297}, {"label": "Raptors", "title": "{'name': 'Raptors', 'division': 'Atlantic', 'conference': 'East'}", "group": "Team", "id": 290}, {"label": "Jazz", "title": "{'name': 'Jazz', 'division': 'Northwest', 'conference': 'West'}", "group": "Team", "id": 295}, {"label": "Bulls", "title": "{'name': 'Bulls', 'division': 'Central', 'conference': 'East'}", "group": "Team", "id": 308}, {"label": "Mavericks", "title": "{'name': 'Mavericks', 'division': 'Southwest', 'conference': 'West'}", "group": "Team", "id": 300}, {"label": "", "title": "{'name': 'Carrie-Anne Moss'}", "group": "Actor", "id": 5}, {"label": "Warriors", "title": "{'name': 'Warriors', 'division': 'Pacific', 'conference': 'West'}", "group": "Team", "id": 307}, {"label": "Timberwolves", "title": "{'name': 'Timberwolves', 'division': 'Northwest', 'conference': 'West'}", "group": "Team", "id": 293}, {"label": "Spurs", "title": "{'name': 'Spurs', 'division': 'Southwest', 'conference': 'West'}", "group": "Team", "id": 298}, {"label": "Kings", "title": "{'name': 'Kings', 'division': 'Pacific', 'conference': 'West'}", "group": "Team", "id": 299}, {"label": "", "title": "{'name': 'Laurence Fishburne'}", "group": "Actor", "id": 4}];
+      var edges = [{"label": "RECEIVED", "to": 294, "from": 281}, {"label": "GAVE", "to": 286, "from": 281}, {"label": "GAVE", "to": 283, "from": 281}, {"label": "GAVE", "to": 285, "from": 281}, {"label": "GAVE", "to": 282, "from": 281}, {"label": "GAVE", "to": 288, "from": 296}, {"label": "RECEIVED", "to": 279, "from": 296}, {"label": "RECEIVED", "to": 283, "from": 296}, {"label": "RECEIVED", "to": 301, "from": 302}, {"label": "RECEIVED", "to": 296, "from": 288}, {"label": "RECEIVED", "to": 280, "from": 288}, {"label": "RECEIVED", "to": 287, "from": 288}, {"label": "GAVE", "to": 282, "from": 305}, {"label": "RECEIVED", "to": 304, "from": 305}, {"label": "GAVE", "to": 285, "from": 306}, {"label": "GAVE", "to": 291, "from": 306}, {"label": "RECEIVED", "to": 283, "from": 306}, {"label": "GAVE", "to": 284, "from": 306}, {"label": "RECEIVED", "to": 303, "from": 306}, {"label": "RECEIVED", "to": 279, "from": 284}, {"label": "RECEIVED", "to": 292, "from": 284}, {"label": "RECEIVED", "to": 306, "from": 284}, {"label": "GAVE", "to": 285, "from": 284}, {"label": "RECEIVED", "to": 289, "from": 284}, {"label": "RECEIVED", "to": 283, "from": 284}, {"label": "RECEIVED", "to": 306, "from": 291}, {"label": "GAVE", "to": 297, "from": 291}, {"label": "RECEIVED", "to": 282, "from": 291}, {"label": "GAVE", "to": 284, "from": 279}, {"label": "RECEIVED", "to": 294, "from": 279}, {"label": "GAVE", "to": 296, "from": 279}, {"label": "GAVE", "to": 280, "from": 279}, {"label": "GAVE", "to": 284, "from": 289}, {"label": "GAVE", "to": 297, "from": 289}, {"label": "RECEIVED", "to": 287, "from": 289}, {"label": "GAVE", "to": 283, "from": 282}, {"label": "RECEIVED", "to": 305, "from": 282}, {"label": "GAVE", "to": 291, "from": 282}, {"label": "RECEIVED", "to": 281, "from": 282}, {"label": "RECEIVED", "to": 304, "from": 286}, {"label": "RECEIVED", "to": 303, "from": 286}, {"label": "GAVE", "to": 290, "from": 286}, {"label": "RECEIVED", "to": 281, "from": 286}, {"label": "RECEIVED", "to": 308, "from": 295}, {"label": "RECEIVED", "to": 285, "from": 295}, {"label": "GAVE", "to": 279, "from": 294}, {"label": "GAVE", "to": 281, "from": 294}, {"label": "GAVE", "to": 285, "from": 294}, {"label": "RECEIVED", "to": 300, "from": 280}, {"label": "GAVE", "to": 288, "from": 280}, {"label": "GAVE", "to": 290, "from": 280}, {"label": "RECEIVED", "to": 279, "from": 280}, {"label": "GAVE", "to": 280, "from": 300}, {"label": "GAVE", "to": 297, "from": 307}, {"label": "RECEIVED", "to": 303, "from": 307}, {"label": "GAVE", "to": 284, "from": 292}, {"label": "GAVE", "to": 285, "from": 292}, {"label": "GAVE", "to": 301, "from": 292}, {"label": "GAVE", "to": 293, "from": 292}, {"label": "RECEIVED", "to": 301, "from": 293}, {"label": "RECEIVED", "to": 292, "from": 293}, {"label": "GAVE", "to": 308, "from": 287}, {"label": "GAVE", "to": 298, "from": 287}, {"label": "GAVE", "to": 289, "from": 287}, {"label": "GAVE", "to": 288, "from": 287}, {"label": "RECEIVED", "to": 291, "from": 297}, {"label": "RECEIVED", "to": 307, "from": 297}, {"label": "GAVE", "to": 299, "from": 297}, {"label": "RECEIVED", "to": 289, "from": 297}, {"label": "RECEIVED", "to": 297, "from": 299}, {"label": "GAVE", "to": 298, "from": 299}, {"label": "RECEIVED", "to": 299, "from": 298}, {"label": "RECEIVED", "to": 287, "from": 298}, {"label": "GAVE", "to": 307, "from": 303}, {"label": "GAVE", "to": 306, "from": 303}, {"label": "GAVE", "to": 286, "from": 303}, {"label": "RECEIVED", "to": 286, "from": 290}, {"label": "RECEIVED", "to": 280, "from": 290}, {"label": "RECEIVED", "to": 282, "from": 283}, {"label": "GAVE", "to": 306, "from": 283}, {"label": "GAVE", "to": 296, "from": 283}, {"label": "RECEIVED", "to": 281, "from": 283}, {"label": "GAVE", "to": 284, "from": 283}, {"label": "GAVE", "to": 295, "from": 308}, {"label": "RECEIVED", "to": 287, "from": 308}, {"label": "GAVE", "to": 286, "from": 304}, {"label": "GAVE", "to": 305, "from": 304}, {"label": "RECEIVED", "to": 306, "from": 285}, {"label": "RECEIVED", "to": 292, "from": 285}, {"label": "RECEIVED", "to": 284, "from": 285}, {"label": "GAVE", "to": 295, "from": 285}, {"label": "RECEIVED", "to": 294, "from": 285}, {"label": "RECEIVED", "to": 281, "from": 285}, {"label": "RECEIVED", "to": 292, "from": 301}, {"label": "GAVE", "to": 293, "from": 301}, {"label": "GAVE", "to": 302, "from": 301}];
+
+      var container = document.getElementById("320c5d08-d172-428b-bd61-0c9b7ed10134");
+
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+
+      var options = {
+          nodes: {
+              shape: 'dot',
+              size: 25,
+              font: {
+                  size: 14
+              }
+          },
+          edges: {
+              font: {
+                  size: 14,
+                  align: 'middle'
+              },
+              color: 'gray',
+              arrows: {
+                  to: {enabled: true, scaleFactor: 0.5}
+              },
+              smooth: {enabled: false}
+          },
+          physics: {
+              enabled: true
+          }
+      };
+
+      var network = new vis.Network(container, data, options);
+
+    </script>
+    </body>
+    </html>
+    
